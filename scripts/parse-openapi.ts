@@ -309,4 +309,69 @@ if (fs.existsSync(enPath)) {
   console.log("\n📋 Copied EN → parsed-endpoints.json (legacy fallback)");
 }
 
+// ─── Generate route map for locale switching ────────────────────────────────
+// Maps operationId → { en: { tag, op }, es: { tag, op } }
+// and tagSlug → { en: tagSlug, es: tagSlug }
+
+console.log("\n🗺️  Generating route map...");
+
+const routeMap: Record<string, Record<string, { tag: string; op: string }>> = {};
+const tagMap: Record<string, Record<string, string>> = {};
+
+for (const locale of locales) {
+  const dataPath = path.resolve(__dirname, "..", "src", "data", `parsed-endpoints-${locale}.json`);
+  if (!fs.existsSync(dataPath)) continue;
+
+  const localeData = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
+
+  // Build tag map: use category name as the common key
+  for (const cat of localeData.categories) {
+    // We need a locale-agnostic key for tags. Use the operationIds of the first endpoint.
+    // Actually, let's map tagSlug per locale keyed by the set of operationIds
+    for (const ep of cat.endpoints) {
+      if (!tagMap[ep.operationId]) tagMap[ep.operationId] = {};
+      tagMap[ep.operationId][locale] = cat.slug;
+    }
+  }
+
+  for (const ep of localeData.endpoints) {
+    if (!routeMap[ep.operationId]) routeMap[ep.operationId] = {};
+    routeMap[ep.operationId][locale] = {
+      tag: ep.tagSlug,
+      op: ep.operationSlug,
+    };
+  }
+}
+
+// Build a clean tagSlug cross-locale map: { "albaranes": { en: "delivery-notes", es: "albaranes" } }
+const tagSlugMap: Record<string, Record<string, string>> = {};
+for (const [opId, localeTagSlugs] of Object.entries(tagMap)) {
+  // For each pair of tag slugs, register the mapping
+  const slugs = Object.values(localeTagSlugs);
+  const key = slugs.sort().join("|");
+  if (!tagSlugMap[key]) {
+    tagSlugMap[key] = {};
+  }
+  for (const [loc, slug] of Object.entries(localeTagSlugs)) {
+    tagSlugMap[key][loc] = slug;
+  }
+}
+
+// Flatten: from any tag slug in any locale → all locale slugs
+const flatTagMap: Record<string, Record<string, string>> = {};
+for (const mapping of Object.values(tagSlugMap)) {
+  for (const slug of Object.values(mapping)) {
+    flatTagMap[slug] = mapping;
+  }
+}
+
+const routeMapOutput = {
+  endpoints: routeMap,
+  tags: flatTagMap,
+};
+
+const routeMapPath = path.resolve(__dirname, "..", "src", "data", "route-map.json");
+fs.writeFileSync(routeMapPath, JSON.stringify(routeMapOutput, null, 2));
+console.log(`   ✅ Written route map with ${Object.keys(routeMap).length} endpoint mappings and ${Object.keys(flatTagMap).length} tag mappings`);
+
 console.log("\n🎉 Done!");

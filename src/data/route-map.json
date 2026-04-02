@@ -1,0 +1,1730 @@
+{
+  "endpoints": {
+    "get_holded_banking_ui_adapter_http_api_listalltreasurytransactionsapi__invoke": {
+      "en": {
+        "tag": "treasuries",
+        "op": "list-all-treasury-transactions"
+      },
+      "es": {
+        "tag": "tesoreria",
+        "op": "listado-de-todas-las-transacciones-de-tesoreria"
+      }
+    },
+    "get_holded_document_creditnote_ui_adapter_http_api_listcreditnoteattachmentsapi__invoke": {
+      "en": {
+        "tag": "credit-notes",
+        "op": "list-credit-note-attachments"
+      },
+      "es": {
+        "tag": "facturas-rectificativas",
+        "op": "listar-adjuntos-de-factura-rectificativa"
+      }
+    },
+    "post_holded_document_creditnote_ui_adapter_http_api_attachcreditnotefileapi__invoke": {
+      "en": {
+        "tag": "credit-notes",
+        "op": "attach-a-file-to-a-credit-note"
+      },
+      "es": {
+        "tag": "facturas-rectificativas",
+        "op": "adjuntar-un-archivo-a-una-factura-rectificativa"
+      }
+    },
+    "get_holded_document_creditnote_ui_adapter_http_api_listcreditnotesapi__invoke": {
+      "en": {
+        "tag": "credit-notes",
+        "op": "list-credit-notes"
+      },
+      "es": {
+        "tag": "facturas-rectificativas",
+        "op": "listado-de-facturas-rectificativas"
+      }
+    },
+    "post_holded_document_creditnote_ui_adapter_http_api_createcreditnoteapi__invoke": {
+      "en": {
+        "tag": "credit-notes",
+        "op": "create-a-credit-note"
+      },
+      "es": {
+        "tag": "facturas-rectificativas",
+        "op": "crear-una-factura-rectificativa"
+      }
+    },
+    "post_holded_document_creditnote_ui_adapter_http_api_createcreditnotepaymentapi__invoke": {
+      "en": {
+        "tag": "credit-notes",
+        "op": "create-a-payment-for-a-credit-note"
+      },
+      "es": {
+        "tag": "facturas-rectificativas",
+        "op": "registrar-un-pago-de-factura-rectificativa"
+      }
+    },
+    "get_holded_document_creditnote_ui_adapter_http_api_getcreditnoteapi__invoke": {
+      "en": {
+        "tag": "credit-notes",
+        "op": "get-a-credit-note"
+      },
+      "es": {
+        "tag": "facturas-rectificativas",
+        "op": "obtener-una-factura-rectificativa"
+      }
+    },
+    "put_holded_document_creditnote_ui_adapter_http_api_updatecreditnoteapi__invoke": {
+      "en": {
+        "tag": "credit-notes",
+        "op": "update-a-credit-note"
+      },
+      "es": {
+        "tag": "facturas-rectificativas",
+        "op": "actualizar-una-factura-rectificativa"
+      }
+    },
+    "delete_holded_document_creditnote_ui_adapter_http_api_deletecreditnoteapi__invoke": {
+      "en": {
+        "tag": "credit-notes",
+        "op": "delete-a-credit-note"
+      },
+      "es": {
+        "tag": "facturas-rectificativas",
+        "op": "eliminar-una-factura-rectificativa"
+      }
+    },
+    "get_holded_document_creditnote_ui_adapter_http_api_getcreditnotepdfapi__invoke": {
+      "en": {
+        "tag": "credit-notes",
+        "op": "get-credit-note-pdf"
+      },
+      "es": {
+        "tag": "facturas-rectificativas",
+        "op": "obtener-pdf-de-factura-rectificativa"
+      }
+    },
+    "post_holded_document_creditnote_ui_adapter_http_api_sendcreditnoteapi__invoke": {
+      "en": {
+        "tag": "credit-notes",
+        "op": "send-a-credit-note-by-email"
+      },
+      "es": {
+        "tag": "facturas-rectificativas",
+        "op": "enviar-factura-rectificativa-por-email"
+      }
+    },
+    "put_holded_document_creditnote_ui_adapter_http_api_setcreditnotepipelineapi__invoke": {
+      "en": {
+        "tag": "credit-notes",
+        "op": "set-credit-note-pipeline"
+      },
+      "es": {
+        "tag": "facturas-rectificativas",
+        "op": "establecer-pipeline-de-factura-rectificativa"
+      }
+    },
+    "get_holded_document_invoice_ui_adapter_http_api_listinvoiceattachmentsapi__invoke": {
+      "en": {
+        "tag": "invoices",
+        "op": "list-invoice-attachments"
+      },
+      "es": {
+        "tag": "facturas",
+        "op": "listar-adjuntos-de-factura"
+      }
+    },
+    "post_holded_document_invoice_ui_adapter_http_api_attachinvoicefileapi__invoke": {
+      "en": {
+        "tag": "invoices",
+        "op": "attach-a-file-to-an-invoice"
+      },
+      "es": {
+        "tag": "facturas",
+        "op": "adjuntar-un-archivo-a-una-factura"
+      }
+    },
+    "get_holded_document_invoice_ui_adapter_http_api_listinvoicesapi__invoke": {
+      "en": {
+        "tag": "invoices",
+        "op": "list-invoices"
+      },
+      "es": {
+        "tag": "facturas",
+        "op": "listado-de-facturas"
+      }
+    },
+    "post_holded_document_invoice_ui_adapter_http_api_createinvoiceapi__invoke": {
+      "en": {
+        "tag": "invoices",
+        "op": "create-an-invoice"
+      },
+      "es": {
+        "tag": "facturas",
+        "op": "crear-una-factura"
+      }
+    },
+    "post_holded_document_invoice_ui_adapter_http_api_createinvoicepaymentapi__invoke": {
+      "en": {
+        "tag": "invoices",
+        "op": "create-a-payment-for-an-invoice"
+      },
+      "es": {
+        "tag": "facturas",
+        "op": "registrar-un-pago-de-factura"
+      }
+    },
+    "get_holded_document_invoice_ui_adapter_http_api_getinvoiceapi__invoke": {
+      "en": {
+        "tag": "invoices",
+        "op": "get-an-invoice"
+      },
+      "es": {
+        "tag": "facturas",
+        "op": "obtener-una-factura"
+      }
+    },
+    "put_holded_document_invoice_ui_adapter_http_api_updateinvoiceapi__invoke": {
+      "en": {
+        "tag": "invoices",
+        "op": "update-an-invoice"
+      },
+      "es": {
+        "tag": "facturas",
+        "op": "actualizar-una-factura"
+      }
+    },
+    "delete_holded_document_invoice_ui_adapter_http_api_deleteinvoiceapi__invoke": {
+      "en": {
+        "tag": "invoices",
+        "op": "delete-an-invoice"
+      },
+      "es": {
+        "tag": "facturas",
+        "op": "eliminar-una-factura"
+      }
+    },
+    "get_holded_document_invoice_ui_adapter_http_api_getinvoicepdfapi__invoke": {
+      "en": {
+        "tag": "invoices",
+        "op": "get-invoice-pdf"
+      },
+      "es": {
+        "tag": "facturas",
+        "op": "obtener-pdf-de-factura"
+      }
+    },
+    "post_holded_document_invoice_ui_adapter_http_api_sendinvoiceapi__invoke": {
+      "en": {
+        "tag": "invoices",
+        "op": "send-an-invoice-by-email"
+      },
+      "es": {
+        "tag": "facturas",
+        "op": "enviar-factura-por-email"
+      }
+    },
+    "put_holded_document_invoice_ui_adapter_http_api_setinvoicepipelineapi__invoke": {
+      "en": {
+        "tag": "invoices",
+        "op": "set-invoice-pipeline"
+      },
+      "es": {
+        "tag": "facturas",
+        "op": "establecer-pipeline-de-factura"
+      }
+    },
+    "post_holded_document_estimate_ui_adapter_http_api_acceptestimateapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "accept-an-estimate"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "aceptar-un-presupuesto"
+      }
+    },
+    "get_holded_document_estimate_ui_adapter_http_api_listestimateattachmentsapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "list-estimate-attachments"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "listar-adjuntos-de-presupuesto"
+      }
+    },
+    "post_holded_document_estimate_ui_adapter_http_api_attachestimatefileapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "attach-a-file-to-an-estimate"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "adjuntar-un-archivo-a-un-presupuesto"
+      }
+    },
+    "get_holded_document_estimate_ui_adapter_http_api_listestimatesapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "list-estimates"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "listado-de-presupuestos"
+      }
+    },
+    "post_holded_document_estimate_ui_adapter_http_api_createestimateapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "create-an-estimate"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "crear-un-presupuesto"
+      }
+    },
+    "get_holded_document_estimate_ui_adapter_http_api_getestimateapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "get-an-estimate"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "obtener-un-presupuesto"
+      }
+    },
+    "put_holded_document_estimate_ui_adapter_http_api_updateestimateapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "update-an-estimate"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "actualizar-un-presupuesto"
+      }
+    },
+    "delete_holded_document_estimate_ui_adapter_http_api_deleteestimateapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "delete-an-estimate"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "eliminar-un-presupuesto"
+      }
+    },
+    "get_holded_document_estimate_ui_adapter_http_api_getestimatepdfapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "get-estimate-pdf"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "obtener-pdf-de-presupuesto"
+      }
+    },
+    "post_holded_document_estimate_ui_adapter_http_api_rejectestimateapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "reject-an-estimate"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "rechazar-un-presupuesto"
+      }
+    },
+    "post_holded_document_estimate_ui_adapter_http_api_sendestimateapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "send-an-estimate-by-email"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "enviar-presupuesto-por-email"
+      }
+    },
+    "put_holded_document_estimate_ui_adapter_http_api_setestimatepipelineapi__invoke": {
+      "en": {
+        "tag": "estimates",
+        "op": "set-estimate-pipeline"
+      },
+      "es": {
+        "tag": "presupuestos",
+        "op": "establecer-pipeline-de-presupuesto"
+      }
+    },
+    "get_holded_document_purchaseorder_ui_adapter_http_api_listpurchaseorderattachmentsapi__invoke": {
+      "en": {
+        "tag": "purchase-orders",
+        "op": "list-purchase-order-attachments"
+      },
+      "es": {
+        "tag": "pedidos-de-compra",
+        "op": "listar-adjuntos-de-pedido-de-compra"
+      }
+    },
+    "post_holded_document_purchaseorder_ui_adapter_http_api_attachpurchaseorderfileapi__invoke": {
+      "en": {
+        "tag": "purchase-orders",
+        "op": "attach-a-file-to-a-purchase-order"
+      },
+      "es": {
+        "tag": "pedidos-de-compra",
+        "op": "adjuntar-un-archivo-a-un-pedido-de-compra"
+      }
+    },
+    "get_holded_document_purchaseorder_ui_adapter_http_api_listpurchaseordersapi__invoke": {
+      "en": {
+        "tag": "purchase-orders",
+        "op": "list-purchase-orders"
+      },
+      "es": {
+        "tag": "pedidos-de-compra",
+        "op": "listado-de-pedidos-de-compra"
+      }
+    },
+    "post_holded_document_purchaseorder_ui_adapter_http_api_createpurchaseorderapi__invoke": {
+      "en": {
+        "tag": "purchase-orders",
+        "op": "create-a-purchase-order"
+      },
+      "es": {
+        "tag": "pedidos-de-compra",
+        "op": "crear-un-pedido-de-compra"
+      }
+    },
+    "get_holded_document_purchaseorder_ui_adapter_http_api_getpurchaseorderapi__invoke": {
+      "en": {
+        "tag": "purchase-orders",
+        "op": "get-a-purchase-order"
+      },
+      "es": {
+        "tag": "pedidos-de-compra",
+        "op": "obtener-un-pedido-de-compra"
+      }
+    },
+    "put_holded_document_purchaseorder_ui_adapter_http_api_updatepurchaseorderapi__invoke": {
+      "en": {
+        "tag": "purchase-orders",
+        "op": "update-a-purchase-order"
+      },
+      "es": {
+        "tag": "pedidos-de-compra",
+        "op": "actualizar-un-pedido-de-compra"
+      }
+    },
+    "delete_holded_document_purchaseorder_ui_adapter_http_api_deletepurchaseorderapi__invoke": {
+      "en": {
+        "tag": "purchase-orders",
+        "op": "delete-a-purchase-order"
+      },
+      "es": {
+        "tag": "pedidos-de-compra",
+        "op": "eliminar-un-pedido-de-compra"
+      }
+    },
+    "get_holded_document_purchaseorder_ui_adapter_http_api_getpurchaseorderpdfapi__invoke": {
+      "en": {
+        "tag": "purchase-orders",
+        "op": "get-purchase-order-pdf"
+      },
+      "es": {
+        "tag": "pedidos-de-compra",
+        "op": "obtener-pdf-de-pedido-de-compra"
+      }
+    },
+    "post_holded_document_purchaseorder_ui_adapter_http_api_sendpurchaseorderapi__invoke": {
+      "en": {
+        "tag": "purchase-orders",
+        "op": "send-a-purchase-order-by-email"
+      },
+      "es": {
+        "tag": "pedidos-de-compra",
+        "op": "enviar-pedido-de-compra-por-email"
+      }
+    },
+    "put_holded_document_purchaseorder_ui_adapter_http_api_setpurchaseorderpipelineapi__invoke": {
+      "en": {
+        "tag": "purchase-orders",
+        "op": "set-purchase-order-pipeline"
+      },
+      "es": {
+        "tag": "pedidos-de-compra",
+        "op": "establecer-pipeline-de-pedido-de-compra"
+      }
+    },
+    "get_holded_document_proform_ui_adapter_http_api_listproformaattachmentsapi__invoke": {
+      "en": {
+        "tag": "proformas",
+        "op": "list-proforma-attachments"
+      },
+      "es": {
+        "tag": "proformas",
+        "op": "listar-adjuntos-de-proforma"
+      }
+    },
+    "post_holded_document_proform_ui_adapter_http_api_attachproformafileapi__invoke": {
+      "en": {
+        "tag": "proformas",
+        "op": "attach-a-file-to-a-proforma"
+      },
+      "es": {
+        "tag": "proformas",
+        "op": "adjuntar-un-archivo-a-una-proforma"
+      }
+    },
+    "get_holded_document_proform_ui_adapter_http_api_listproformasapi__invoke": {
+      "en": {
+        "tag": "proformas",
+        "op": "list-proformas"
+      },
+      "es": {
+        "tag": "proformas",
+        "op": "listado-de-proformas"
+      }
+    },
+    "post_holded_document_proform_ui_adapter_http_api_createproformaapi__invoke": {
+      "en": {
+        "tag": "proformas",
+        "op": "create-a-proforma"
+      },
+      "es": {
+        "tag": "proformas",
+        "op": "crear-una-proforma"
+      }
+    },
+    "get_holded_document_proform_ui_adapter_http_api_getproformaapi__invoke": {
+      "en": {
+        "tag": "proformas",
+        "op": "get-a-proforma"
+      },
+      "es": {
+        "tag": "proformas",
+        "op": "obtener-una-proforma"
+      }
+    },
+    "put_holded_document_proform_ui_adapter_http_api_updateproformaapi__invoke": {
+      "en": {
+        "tag": "proformas",
+        "op": "update-a-proforma"
+      },
+      "es": {
+        "tag": "proformas",
+        "op": "actualizar-una-proforma"
+      }
+    },
+    "delete_holded_document_proform_ui_adapter_http_api_deleteproformaapi__invoke": {
+      "en": {
+        "tag": "proformas",
+        "op": "delete-a-proforma"
+      },
+      "es": {
+        "tag": "proformas",
+        "op": "eliminar-una-proforma"
+      }
+    },
+    "get_holded_document_proform_ui_adapter_http_api_getproformapdfapi__invoke": {
+      "en": {
+        "tag": "proformas",
+        "op": "get-proforma-pdf"
+      },
+      "es": {
+        "tag": "proformas",
+        "op": "obtener-pdf-de-proforma"
+      }
+    },
+    "post_holded_document_proform_ui_adapter_http_api_sendproformaapi__invoke": {
+      "en": {
+        "tag": "proformas",
+        "op": "send-a-proforma-by-email"
+      },
+      "es": {
+        "tag": "proformas",
+        "op": "enviar-proforma-por-email"
+      }
+    },
+    "put_holded_document_proform_ui_adapter_http_api_setproformapipelineapi__invoke": {
+      "en": {
+        "tag": "proformas",
+        "op": "set-proforma-pipeline"
+      },
+      "es": {
+        "tag": "proformas",
+        "op": "establecer-pipeline-de-proforma"
+      }
+    },
+    "get_holded_document_salesreceipt_ui_adapter_http_api_listsalesreceiptattachmentsapi__invoke": {
+      "en": {
+        "tag": "sales-receipts",
+        "op": "list-sales-receipt-attachments"
+      },
+      "es": {
+        "tag": "albaranes-de-venta",
+        "op": "listar-adjuntos-de-albaran-de-venta"
+      }
+    },
+    "post_holded_document_salesreceipt_ui_adapter_http_api_attachsalesreceiptfileapi__invoke": {
+      "en": {
+        "tag": "sales-receipts",
+        "op": "attach-a-file-to-a-sales-receipt"
+      },
+      "es": {
+        "tag": "albaranes-de-venta",
+        "op": "adjuntar-un-archivo-a-un-albaran-de-venta"
+      }
+    },
+    "get_holded_document_salesreceipt_ui_adapter_http_api_listsalesreceiptsapi__invoke": {
+      "en": {
+        "tag": "sales-receipts",
+        "op": "list-sales-receipts"
+      },
+      "es": {
+        "tag": "albaranes-de-venta",
+        "op": "listado-de-albaranes-de-venta"
+      }
+    },
+    "post_holded_document_salesreceipt_ui_adapter_http_api_createsalesreceiptapi__invoke": {
+      "en": {
+        "tag": "sales-receipts",
+        "op": "create-a-sales-receipt"
+      },
+      "es": {
+        "tag": "albaranes-de-venta",
+        "op": "crear-un-albaran-de-venta"
+      }
+    },
+    "post_holded_document_salesreceipt_ui_adapter_http_api_createsalesreceiptpaymentapi__invoke": {
+      "en": {
+        "tag": "sales-receipts",
+        "op": "create-a-payment-for-a-sales-receipt"
+      },
+      "es": {
+        "tag": "albaranes-de-venta",
+        "op": "registrar-un-pago-de-albaran-de-venta"
+      }
+    },
+    "get_holded_document_salesreceipt_ui_adapter_http_api_getsalesreceiptapi__invoke": {
+      "en": {
+        "tag": "sales-receipts",
+        "op": "get-a-sales-receipt"
+      },
+      "es": {
+        "tag": "albaranes-de-venta",
+        "op": "obtener-un-albaran-de-venta"
+      }
+    },
+    "put_holded_document_salesreceipt_ui_adapter_http_api_updatesalesreceiptapi__invoke": {
+      "en": {
+        "tag": "sales-receipts",
+        "op": "update-a-sales-receipt"
+      },
+      "es": {
+        "tag": "albaranes-de-venta",
+        "op": "actualizar-un-albaran-de-venta"
+      }
+    },
+    "delete_holded_document_salesreceipt_ui_adapter_http_api_deletesalesreceiptapi__invoke": {
+      "en": {
+        "tag": "sales-receipts",
+        "op": "delete-a-sales-receipt"
+      },
+      "es": {
+        "tag": "albaranes-de-venta",
+        "op": "eliminar-un-albaran-de-venta"
+      }
+    },
+    "get_holded_document_salesreceipt_ui_adapter_http_api_getsalesreceiptpdfapi__invoke": {
+      "en": {
+        "tag": "sales-receipts",
+        "op": "get-sales-receipt-pdf"
+      },
+      "es": {
+        "tag": "albaranes-de-venta",
+        "op": "obtener-pdf-de-albaran-de-venta"
+      }
+    },
+    "post_holded_document_salesreceipt_ui_adapter_http_api_sendsalesreceiptapi__invoke": {
+      "en": {
+        "tag": "sales-receipts",
+        "op": "send-a-sales-receipt-by-email"
+      },
+      "es": {
+        "tag": "albaranes-de-venta",
+        "op": "enviar-albaran-de-venta-por-email"
+      }
+    },
+    "put_holded_document_salesreceipt_ui_adapter_http_api_setsalesreceiptpipelineapi__invoke": {
+      "en": {
+        "tag": "sales-receipts",
+        "op": "set-sales-receipt-pipeline"
+      },
+      "es": {
+        "tag": "albaranes-de-venta",
+        "op": "establecer-pipeline-de-albaran-de-venta"
+      }
+    },
+    "get_holded_document_saleorder_ui_adapter_http_api_listsalesorderattachmentsapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "list-sales-order-attachments"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "listar-adjuntos-de-pedido-de-venta"
+      }
+    },
+    "post_holded_document_saleorder_ui_adapter_http_api_attachsalesorderfileapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "attach-a-file-to-a-sales-order"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "adjuntar-un-archivo-a-un-pedido-de-venta"
+      }
+    },
+    "get_holded_document_saleorder_ui_adapter_http_api_listsalesordersapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "list-sales-orders"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "listado-de-pedidos-de-venta"
+      }
+    },
+    "post_holded_document_saleorder_ui_adapter_http_api_createsalesorderapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "create-a-sales-order"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "crear-un-pedido-de-venta"
+      }
+    },
+    "get_holded_document_saleorder_ui_adapter_http_api_getsalesorderapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "get-a-sales-order"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "obtener-un-pedido-de-venta"
+      }
+    },
+    "put_holded_document_saleorder_ui_adapter_http_api_updatesalesorderapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "update-a-sales-order"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "actualizar-un-pedido-de-venta"
+      }
+    },
+    "delete_holded_document_saleorder_ui_adapter_http_api_deletesalesorderapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "delete-a-sales-order"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "eliminar-un-pedido-de-venta"
+      }
+    },
+    "get_holded_document_saleorder_ui_adapter_http_api_getsalesorderpdfapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "get-sales-order-pdf"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "obtener-pdf-de-pedido-de-venta"
+      }
+    },
+    "get_holded_document_saleorder_ui_adapter_http_api_getsalesordershippeditemsapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "get-shipped-items-for-a-sales-order"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "obtener-articulos-enviados-de-un-pedido-de-venta"
+      }
+    },
+    "post_holded_document_saleorder_ui_adapter_http_api_sendsalesorderapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "send-a-sales-order-by-email"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "enviar-pedido-de-venta-por-email"
+      }
+    },
+    "put_holded_document_saleorder_ui_adapter_http_api_setsalesorderpipelineapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "set-sales-order-pipeline"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "establecer-pipeline-de-pedido-de-venta"
+      }
+    },
+    "post_holded_document_saleorder_ui_adapter_http_api_shipsalesorderapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "ship-all-items-in-a-sales-order"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "enviar-todos-los-articulos-de-un-pedido-de-venta"
+      }
+    },
+    "post_holded_document_saleorder_ui_adapter_http_api_shipsalesorderbylinesapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "ship-specific-lines-in-a-sales-order"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "envio-parcial-de-un-pedido-de-venta"
+      }
+    },
+    "put_holded_document_saleorder_ui_adapter_http_api_updatesalesordertrackingapi__invoke": {
+      "en": {
+        "tag": "sales-orders",
+        "op": "update-sales-order-tracking-information"
+      },
+      "es": {
+        "tag": "pedidos-de-venta",
+        "op": "actualizar-informacion-de-seguimiento-del-pedido-de-venta"
+      }
+    },
+    "get_holded_document_shared_ui_adapter_http_api_numberingseries_listnumberingseriesapi__invoke": {
+      "en": {
+        "tag": "numbering-series",
+        "op": "list-numbering-series-by-document-type"
+      },
+      "es": {
+        "tag": "series-de-numeracion",
+        "op": "listar-series-de-numeracion-por-tipo-de-documento"
+      }
+    },
+    "post_holded_document_shared_ui_adapter_http_api_numberingseries_createnumberingseriesapi__invoke": {
+      "en": {
+        "tag": "numbering-series",
+        "op": "create-a-numbering-series"
+      },
+      "es": {
+        "tag": "series-de-numeracion",
+        "op": "crear-una-serie-de-numeracion"
+      }
+    },
+    "put_holded_document_shared_ui_adapter_http_api_numberingseries_updatenumberingseriesapi__invoke": {
+      "en": {
+        "tag": "numbering-series",
+        "op": "update-a-numbering-series"
+      },
+      "es": {
+        "tag": "series-de-numeracion",
+        "op": "actualizar-una-serie-de-numeracion"
+      }
+    },
+    "delete_holded_document_shared_ui_adapter_http_api_numberingseries_deletenumberingseriesapi__invoke": {
+      "en": {
+        "tag": "numbering-series",
+        "op": "delete-a-numbering-series"
+      },
+      "es": {
+        "tag": "series-de-numeracion",
+        "op": "eliminar-una-serie-de-numeracion"
+      }
+    },
+    "get_holded_document_waybill_ui_adapter_http_api_listwaybillattachmentsapi__invoke": {
+      "en": {
+        "tag": "waybills",
+        "op": "list-waybill-attachments"
+      },
+      "es": {
+        "tag": "albaranes",
+        "op": "listar-adjuntos-de-albaran"
+      }
+    },
+    "post_holded_document_waybill_ui_adapter_http_api_attachwaybillfileapi__invoke": {
+      "en": {
+        "tag": "waybills",
+        "op": "attach-a-file-to-a-waybill"
+      },
+      "es": {
+        "tag": "albaranes",
+        "op": "adjuntar-un-archivo-a-un-albaran"
+      }
+    },
+    "get_holded_document_waybill_ui_adapter_http_api_listwaybillsapi__invoke": {
+      "en": {
+        "tag": "waybills",
+        "op": "list-waybills"
+      },
+      "es": {
+        "tag": "albaranes",
+        "op": "listado-de-albaranes"
+      }
+    },
+    "post_holded_document_waybill_ui_adapter_http_api_createwaybillapi__invoke": {
+      "en": {
+        "tag": "waybills",
+        "op": "create-a-waybill"
+      },
+      "es": {
+        "tag": "albaranes",
+        "op": "crear-un-albaran"
+      }
+    },
+    "get_holded_document_waybill_ui_adapter_http_api_getwaybillapi__invoke": {
+      "en": {
+        "tag": "waybills",
+        "op": "get-a-waybill"
+      },
+      "es": {
+        "tag": "albaranes",
+        "op": "obtener-un-albaran"
+      }
+    },
+    "put_holded_document_waybill_ui_adapter_http_api_updatewaybillapi__invoke": {
+      "en": {
+        "tag": "waybills",
+        "op": "update-a-waybill"
+      },
+      "es": {
+        "tag": "albaranes",
+        "op": "actualizar-un-albaran"
+      }
+    },
+    "delete_holded_document_waybill_ui_adapter_http_api_deletewaybillapi__invoke": {
+      "en": {
+        "tag": "waybills",
+        "op": "delete-a-waybill"
+      },
+      "es": {
+        "tag": "albaranes",
+        "op": "eliminar-un-albaran"
+      }
+    },
+    "get_holded_document_waybill_ui_adapter_http_api_getwaybillpdfapi__invoke": {
+      "en": {
+        "tag": "waybills",
+        "op": "get-waybill-pdf"
+      },
+      "es": {
+        "tag": "albaranes",
+        "op": "obtener-pdf-de-albaran"
+      }
+    },
+    "post_holded_document_waybill_ui_adapter_http_api_sendwaybillapi__invoke": {
+      "en": {
+        "tag": "waybills",
+        "op": "send-a-waybill-by-email"
+      },
+      "es": {
+        "tag": "albaranes",
+        "op": "enviar-albaran-por-email"
+      }
+    },
+    "put_holded_document_waybill_ui_adapter_http_api_setwaybillpipelineapi__invoke": {
+      "en": {
+        "tag": "waybills",
+        "op": "set-waybill-pipeline"
+      },
+      "es": {
+        "tag": "albaranes",
+        "op": "establecer-pipeline-de-albaran"
+      }
+    },
+    "put_holded_document_waybill_ui_adapter_http_api_updatewaybilltrackingapi__invoke": {
+      "en": {
+        "tag": "waybills",
+        "op": "update-waybill-tracking-information"
+      },
+      "es": {
+        "tag": "albaranes",
+        "op": "actualizar-informacion-de-seguimiento-del-albaran"
+      }
+    },
+    "get_holded_document_purchase_ui_adapter_http_api_listpurchaseattachmentsapi__invoke": {
+      "en": {
+        "tag": "purchases",
+        "op": "list-purchase-attachments"
+      },
+      "es": {
+        "tag": "compras",
+        "op": "listar-adjuntos-de-compra"
+      }
+    },
+    "post_holded_document_purchase_ui_adapter_http_api_attachpurchasefileapi__invoke": {
+      "en": {
+        "tag": "purchases",
+        "op": "attach-a-file-to-a-purchase"
+      },
+      "es": {
+        "tag": "compras",
+        "op": "adjuntar-un-archivo-a-una-compra"
+      }
+    },
+    "get_holded_document_purchase_ui_adapter_http_api_listpurchasesapi__invoke": {
+      "en": {
+        "tag": "purchases",
+        "op": "list-purchases"
+      },
+      "es": {
+        "tag": "compras",
+        "op": "listado-de-compras"
+      }
+    },
+    "post_holded_document_purchase_ui_adapter_http_api_createpurchaseapi__invoke": {
+      "en": {
+        "tag": "purchases",
+        "op": "create-a-purchase"
+      },
+      "es": {
+        "tag": "compras",
+        "op": "crear-una-compra"
+      }
+    },
+    "post_holded_document_purchase_ui_adapter_http_api_createpurchasepaymentapi__invoke": {
+      "en": {
+        "tag": "purchases",
+        "op": "create-a-payment-for-a-purchase"
+      },
+      "es": {
+        "tag": "compras",
+        "op": "registrar-un-pago-de-compra"
+      }
+    },
+    "get_holded_document_purchase_ui_adapter_http_api_getpurchaseapi__invoke": {
+      "en": {
+        "tag": "purchases",
+        "op": "get-a-purchase"
+      },
+      "es": {
+        "tag": "compras",
+        "op": "obtener-una-compra"
+      }
+    },
+    "put_holded_document_purchase_ui_adapter_http_api_updatepurchaseapi__invoke": {
+      "en": {
+        "tag": "purchases",
+        "op": "update-a-purchase"
+      },
+      "es": {
+        "tag": "compras",
+        "op": "actualizar-una-compra"
+      }
+    },
+    "delete_holded_document_purchase_ui_adapter_http_api_deletepurchaseapi__invoke": {
+      "en": {
+        "tag": "purchases",
+        "op": "delete-a-purchase"
+      },
+      "es": {
+        "tag": "compras",
+        "op": "eliminar-una-compra"
+      }
+    },
+    "get_holded_document_purchase_ui_adapter_http_api_getpurchasepdfapi__invoke": {
+      "en": {
+        "tag": "purchases",
+        "op": "get-purchase-pdf"
+      },
+      "es": {
+        "tag": "compras",
+        "op": "obtener-pdf-de-compra"
+      }
+    },
+    "post_holded_document_purchase_ui_adapter_http_api_sendpurchaseapi__invoke": {
+      "en": {
+        "tag": "purchases",
+        "op": "send-a-purchase-by-email"
+      },
+      "es": {
+        "tag": "compras",
+        "op": "enviar-compra-por-email"
+      }
+    },
+    "put_holded_document_purchase_ui_adapter_http_api_setpurchasepipelineapi__invoke": {
+      "en": {
+        "tag": "purchases",
+        "op": "set-purchase-pipeline"
+      },
+      "es": {
+        "tag": "compras",
+        "op": "establecer-pipeline-de-compra"
+      }
+    },
+    "get_holded_document_remittance_ui_adapter_http_api_getremittanceapi__invoke": {
+      "en": {
+        "tag": "remittances",
+        "op": "get-a-remittance"
+      },
+      "es": {
+        "tag": "remesas",
+        "op": "obtener-una-remesa"
+      }
+    },
+    "get_holded_document_remittance_ui_adapter_http_api_listremittancesapi__invoke": {
+      "en": {
+        "tag": "remittances",
+        "op": "list-remittances"
+      },
+      "es": {
+        "tag": "remesas",
+        "op": "listado-de-remesas"
+      }
+    },
+    "get_holded_accounting_ui_adapter_http_api_listaccountingaccountsapi__invoke": {
+      "en": {
+        "tag": "accounting",
+        "op": "list-chart-of-accounts"
+      },
+      "es": {
+        "tag": "contabilidad",
+        "op": "listado-del-plan-contable"
+      }
+    },
+    "post_holded_accounting_ui_adapter_http_api_createaccountingaccountapi__invoke": {
+      "en": {
+        "tag": "accounting",
+        "op": "create-an-accounting-account"
+      },
+      "es": {
+        "tag": "contabilidad",
+        "op": "crear-una-cuenta-contable"
+      }
+    },
+    "get_holded_accounting_ui_adapter_http_api_listledgerentriesapi__invoke": {
+      "en": {
+        "tag": "accounting",
+        "op": "list-ledger-entries"
+      },
+      "es": {
+        "tag": "contabilidad",
+        "op": "listado-de-asientos-contables"
+      }
+    },
+    "post_holded_accounting_ui_adapter_http_api_createledgerentryapi__invoke": {
+      "en": {
+        "tag": "accounting",
+        "op": "create-a-ledger-entry"
+      },
+      "es": {
+        "tag": "contabilidad",
+        "op": "crear-un-asiento-contable"
+      }
+    },
+    "get_holded_accounting_ui_adapter_http_api_expensesaccount_listexpensesaccountsapi__invoke": {
+      "en": {
+        "tag": "expenses-accounts",
+        "op": "list-all-expenses-accounts"
+      },
+      "es": {
+        "tag": "cuentas-de-gastos",
+        "op": "listado-de-cuentas-de-gastos"
+      }
+    },
+    "post_holded_accounting_ui_adapter_http_api_expensesaccount_createexpensesaccountapi__invoke": {
+      "en": {
+        "tag": "expenses-accounts",
+        "op": "create-an-expenses-account"
+      },
+      "es": {
+        "tag": "cuentas-de-gastos",
+        "op": "crear-una-cuenta-de-gastos"
+      }
+    },
+    "get_holded_accounting_ui_adapter_http_api_expensesaccount_getexpensesaccountapi__invoke": {
+      "en": {
+        "tag": "expenses-accounts",
+        "op": "get-an-expenses-account-by-id"
+      },
+      "es": {
+        "tag": "cuentas-de-gastos",
+        "op": "obtener-una-cuenta-de-gastos-por-id"
+      }
+    },
+    "put_holded_accounting_ui_adapter_http_api_expensesaccount_updateexpensesaccountapi__invoke": {
+      "en": {
+        "tag": "expenses-accounts",
+        "op": "update-an-expenses-account"
+      },
+      "es": {
+        "tag": "cuentas-de-gastos",
+        "op": "actualizar-una-cuenta-de-gastos"
+      }
+    },
+    "delete_holded_accounting_ui_adapter_http_api_expensesaccount_deleteexpensesaccountapi__invoke": {
+      "en": {
+        "tag": "expenses-accounts",
+        "op": "delete-an-expenses-account"
+      },
+      "es": {
+        "tag": "cuentas-de-gastos",
+        "op": "eliminar-una-cuenta-de-gastos"
+      }
+    },
+    "get_holded_accounting_ui_adapter_http_api_saleschannel_listsaleschannelsapi__invoke": {
+      "en": {
+        "tag": "sales-channels",
+        "op": "list-all-sales-channels"
+      },
+      "es": {
+        "tag": "canales-de-venta",
+        "op": "listado-de-canales-de-venta"
+      }
+    },
+    "post_holded_accounting_ui_adapter_http_api_saleschannel_createsaleschannelapi__invoke": {
+      "en": {
+        "tag": "sales-channels",
+        "op": "create-a-sales-channel"
+      },
+      "es": {
+        "tag": "canales-de-venta",
+        "op": "crear-un-canal-de-venta"
+      }
+    },
+    "get_holded_accounting_ui_adapter_http_api_saleschannel_getsaleschannelapi__invoke": {
+      "en": {
+        "tag": "sales-channels",
+        "op": "get-a-sales-channel-by-id"
+      },
+      "es": {
+        "tag": "canales-de-venta",
+        "op": "obtener-un-canal-de-venta-por-id"
+      }
+    },
+    "put_holded_accounting_ui_adapter_http_api_saleschannel_updatesaleschannelapi__invoke": {
+      "en": {
+        "tag": "sales-channels",
+        "op": "update-a-sales-channel"
+      },
+      "es": {
+        "tag": "canales-de-venta",
+        "op": "actualizar-un-canal-de-venta"
+      }
+    },
+    "delete_holded_accounting_ui_adapter_http_api_saleschannel_deletesaleschannelapi__invoke": {
+      "en": {
+        "tag": "sales-channels",
+        "op": "delete-a-sales-channel"
+      },
+      "es": {
+        "tag": "canales-de-venta",
+        "op": "eliminar-un-canal-de-venta"
+      }
+    },
+    "get_holded_contact_ui_adapter_http_api_listcontactsapi__invoke": {
+      "en": {
+        "tag": "contact",
+        "op": "list-contacts"
+      },
+      "es": {
+        "tag": "contactos",
+        "op": "listado-de-contactos"
+      }
+    },
+    "post_holded_contact_ui_adapter_http_api_createcontactapi__invoke": {
+      "en": {
+        "tag": "contact",
+        "op": "create-a-contact"
+      },
+      "es": {
+        "tag": "contactos",
+        "op": "crear-un-contacto"
+      }
+    },
+    "get_holded_contact_ui_adapter_http_api_getcontactapi__invoke": {
+      "en": {
+        "tag": "contact",
+        "op": "get-a-contact-by-id"
+      },
+      "es": {
+        "tag": "contactos",
+        "op": "obtener-un-contacto-por-id"
+      }
+    },
+    "put_holded_contact_ui_adapter_http_api_updatecontactapi__invoke": {
+      "en": {
+        "tag": "contact",
+        "op": "update-a-contact"
+      },
+      "es": {
+        "tag": "contactos",
+        "op": "actualizar-un-contacto"
+      }
+    },
+    "delete_holded_contact_ui_adapter_http_api_deletecontactapi__invoke": {
+      "en": {
+        "tag": "contact",
+        "op": "delete-a-contact"
+      },
+      "es": {
+        "tag": "contactos",
+        "op": "eliminar-un-contacto"
+      }
+    },
+    "get_holded_product_ui_adapter_http_api_listproductsapi__invoke": {
+      "en": {
+        "tag": "products",
+        "op": "list-all-products"
+      },
+      "es": {
+        "tag": "productos",
+        "op": "listado-de-productos"
+      }
+    },
+    "post_holded_product_ui_adapter_http_api_createproductapi__invoke": {
+      "en": {
+        "tag": "products",
+        "op": "create-a-product"
+      },
+      "es": {
+        "tag": "productos",
+        "op": "crear-un-producto"
+      }
+    },
+    "get_holded_product_ui_adapter_http_api_getproductapi__invoke": {
+      "en": {
+        "tag": "products",
+        "op": "get-a-product-by-id"
+      },
+      "es": {
+        "tag": "productos",
+        "op": "obtener-un-producto-por-id"
+      }
+    },
+    "put_holded_product_ui_adapter_http_api_updateproductapi__invoke": {
+      "en": {
+        "tag": "products",
+        "op": "update-a-product"
+      },
+      "es": {
+        "tag": "productos",
+        "op": "actualizar-un-producto"
+      }
+    },
+    "delete_holded_product_ui_adapter_http_api_deleteproductapi__invoke": {
+      "en": {
+        "tag": "products",
+        "op": "delete-a-product"
+      },
+      "es": {
+        "tag": "productos",
+        "op": "eliminar-un-producto"
+      }
+    },
+    "put_holded_product_ui_adapter_http_api_updateproductstockapi__invoke": {
+      "en": {
+        "tag": "products",
+        "op": "update-stock-for-a-product"
+      },
+      "es": {
+        "tag": "productos",
+        "op": "actualizar-el-stock-de-un-producto"
+      }
+    },
+    "get_holded_service_ui_adapter_http_api_listservicesapi__invoke": {
+      "en": {
+        "tag": "services",
+        "op": "list-services"
+      },
+      "es": {
+        "tag": "servicios",
+        "op": "listado-de-servicios"
+      }
+    },
+    "post_holded_service_ui_adapter_http_api_createserviceapi__invoke": {
+      "en": {
+        "tag": "services",
+        "op": "create-a-service"
+      },
+      "es": {
+        "tag": "servicios",
+        "op": "crear-un-servicio"
+      }
+    },
+    "get_holded_service_ui_adapter_http_api_getserviceapi__invoke": {
+      "en": {
+        "tag": "services",
+        "op": "get-a-service"
+      },
+      "es": {
+        "tag": "servicios",
+        "op": "obtener-un-servicio"
+      }
+    },
+    "put_holded_service_ui_adapter_http_api_updateserviceapi__invoke": {
+      "en": {
+        "tag": "services",
+        "op": "update-a-service"
+      },
+      "es": {
+        "tag": "servicios",
+        "op": "actualizar-un-servicio"
+      }
+    },
+    "delete_holded_service_ui_adapter_http_api_deleteserviceapi__invoke": {
+      "en": {
+        "tag": "services",
+        "op": "delete-a-service"
+      },
+      "es": {
+        "tag": "servicios",
+        "op": "eliminar-un-servicio"
+      }
+    },
+    "get_holded_payment_ui_adapter_http_api_listpaymentsapi__invoke": {
+      "en": {
+        "tag": "payment",
+        "op": "list-payments"
+      },
+      "es": {
+        "tag": "pagos",
+        "op": "listado-de-pagos"
+      }
+    },
+    "post_holded_payment_ui_adapter_http_api_createpaymentapi__invoke": {
+      "en": {
+        "tag": "payment",
+        "op": "create-a-payment"
+      },
+      "es": {
+        "tag": "pagos",
+        "op": "crear-un-pago"
+      }
+    },
+    "get_holded_payment_ui_adapter_http_api_getpaymentapi__invoke": {
+      "en": {
+        "tag": "payment",
+        "op": "get-a-payment-by-id"
+      },
+      "es": {
+        "tag": "pagos",
+        "op": "obtener-un-pago-por-id"
+      }
+    },
+    "put_holded_payment_ui_adapter_http_api_updatepaymentapi__invoke": {
+      "en": {
+        "tag": "payment",
+        "op": "update-a-payment"
+      },
+      "es": {
+        "tag": "pagos",
+        "op": "actualizar-un-pago"
+      }
+    },
+    "delete_holded_payment_ui_adapter_http_api_deletepaymentapi__invoke": {
+      "en": {
+        "tag": "payment",
+        "op": "delete-a-payment"
+      },
+      "es": {
+        "tag": "pagos",
+        "op": "eliminar-un-pago"
+      }
+    },
+    "get_holded_banking_ui_adapter_http_api_listtreasuriesapi__invoke": {
+      "en": {
+        "tag": "treasuries",
+        "op": "list-treasuries"
+      },
+      "es": {
+        "tag": "tesoreria",
+        "op": "listado-de-cuentas-de-tesoreria"
+      }
+    },
+    "post_holded_banking_ui_adapter_http_api_createtreasuryapi__invoke": {
+      "en": {
+        "tag": "treasuries",
+        "op": "create-a-treasury"
+      },
+      "es": {
+        "tag": "tesoreria",
+        "op": "crear-una-cuenta-de-tesoreria"
+      }
+    },
+    "get_holded_banking_ui_adapter_http_api_gettreasuryapi__invoke": {
+      "en": {
+        "tag": "treasuries",
+        "op": "get-a-treasury-by-id"
+      },
+      "es": {
+        "tag": "tesoreria",
+        "op": "obtener-una-cuenta-de-tesoreria-por-id"
+      }
+    },
+    "put_holded_banking_ui_adapter_http_api_updatetreasuryapi__invoke": {
+      "en": {
+        "tag": "treasuries",
+        "op": "update-a-treasury"
+      },
+      "es": {
+        "tag": "tesoreria",
+        "op": "actualizar-una-cuenta-de-tesoreria"
+      }
+    },
+    "delete_holded_banking_ui_adapter_http_api_deletetreasuryapi__invoke": {
+      "en": {
+        "tag": "treasuries",
+        "op": "delete-a-treasury"
+      },
+      "es": {
+        "tag": "tesoreria",
+        "op": "eliminar-una-cuenta-de-tesoreria"
+      }
+    },
+    "get_holded_banking_ui_adapter_http_api_listtreasurytransactionsapi__invoke": {
+      "en": {
+        "tag": "treasuries",
+        "op": "list-treasury-transactions"
+      },
+      "es": {
+        "tag": "tesoreria",
+        "op": "listado-de-transacciones-de-tesoreria"
+      }
+    },
+    "get_holded_tax_ui_adapter_http_api_listtaxesapi__invoke": {
+      "en": {
+        "tag": "tax",
+        "op": "list-all-taxes"
+      },
+      "es": {
+        "tag": "impuestos",
+        "op": "listado-de-impuestos"
+      }
+    },
+    "get_holded_warehouse_ui_adapter_http_api_listwarehousesapi__invoke": {
+      "en": {
+        "tag": "warehouses",
+        "op": "list-all-warehouses"
+      },
+      "es": {
+        "tag": "almacenes",
+        "op": "listado-de-almacenes"
+      }
+    },
+    "post_holded_warehouse_ui_adapter_http_api_createwarehouseapi__invoke": {
+      "en": {
+        "tag": "warehouses",
+        "op": "create-a-warehouse"
+      },
+      "es": {
+        "tag": "almacenes",
+        "op": "crear-un-almacen"
+      }
+    },
+    "get_holded_warehouse_ui_adapter_http_api_getwarehouseapi__invoke": {
+      "en": {
+        "tag": "warehouses",
+        "op": "get-a-warehouse-by-id"
+      },
+      "es": {
+        "tag": "almacenes",
+        "op": "obtener-un-almacen-por-id"
+      }
+    },
+    "put_holded_warehouse_ui_adapter_http_api_updatewarehouseapi__invoke": {
+      "en": {
+        "tag": "warehouses",
+        "op": "update-a-warehouse"
+      },
+      "es": {
+        "tag": "almacenes",
+        "op": "actualizar-un-almacen"
+      }
+    },
+    "delete_holded_warehouse_ui_adapter_http_api_deletewarehouseapi__invoke": {
+      "en": {
+        "tag": "warehouses",
+        "op": "delete-a-warehouse"
+      },
+      "es": {
+        "tag": "almacenes",
+        "op": "eliminar-un-almacen"
+      }
+    },
+    "get_holded_warehouse_ui_adapter_http_api_getwarehousestockapi__invoke": {
+      "en": {
+        "tag": "warehouses",
+        "op": "get-stock-levels-for-a-warehouse"
+      },
+      "es": {
+        "tag": "almacenes",
+        "op": "obtener-niveles-de-stock-de-un-almacen"
+      }
+    }
+  },
+  "tags": {
+    "accounting": {
+      "en": "accounting",
+      "es": "contabilidad"
+    },
+    "contabilidad": {
+      "en": "accounting",
+      "es": "contabilidad"
+    },
+    "contact": {
+      "en": "contact",
+      "es": "contactos"
+    },
+    "contactos": {
+      "en": "contact",
+      "es": "contactos"
+    },
+    "credit-notes": {
+      "en": "credit-notes",
+      "es": "facturas-rectificativas"
+    },
+    "facturas-rectificativas": {
+      "en": "credit-notes",
+      "es": "facturas-rectificativas"
+    },
+    "estimates": {
+      "en": "estimates",
+      "es": "presupuestos"
+    },
+    "presupuestos": {
+      "en": "estimates",
+      "es": "presupuestos"
+    },
+    "expenses-accounts": {
+      "en": "expenses-accounts",
+      "es": "cuentas-de-gastos"
+    },
+    "cuentas-de-gastos": {
+      "en": "expenses-accounts",
+      "es": "cuentas-de-gastos"
+    },
+    "invoices": {
+      "en": "invoices",
+      "es": "facturas"
+    },
+    "facturas": {
+      "en": "invoices",
+      "es": "facturas"
+    },
+    "numbering-series": {
+      "en": "numbering-series",
+      "es": "series-de-numeracion"
+    },
+    "series-de-numeracion": {
+      "en": "numbering-series",
+      "es": "series-de-numeracion"
+    },
+    "payment": {
+      "en": "payment",
+      "es": "pagos"
+    },
+    "pagos": {
+      "en": "payment",
+      "es": "pagos"
+    },
+    "products": {
+      "en": "products",
+      "es": "productos"
+    },
+    "productos": {
+      "en": "products",
+      "es": "productos"
+    },
+    "proformas": {
+      "en": "proformas",
+      "es": "proformas"
+    },
+    "purchase-orders": {
+      "en": "purchase-orders",
+      "es": "pedidos-de-compra"
+    },
+    "pedidos-de-compra": {
+      "en": "purchase-orders",
+      "es": "pedidos-de-compra"
+    },
+    "purchases": {
+      "en": "purchases",
+      "es": "compras"
+    },
+    "compras": {
+      "en": "purchases",
+      "es": "compras"
+    },
+    "remittances": {
+      "en": "remittances",
+      "es": "remesas"
+    },
+    "remesas": {
+      "en": "remittances",
+      "es": "remesas"
+    },
+    "sales-channels": {
+      "en": "sales-channels",
+      "es": "canales-de-venta"
+    },
+    "canales-de-venta": {
+      "en": "sales-channels",
+      "es": "canales-de-venta"
+    },
+    "sales-orders": {
+      "en": "sales-orders",
+      "es": "pedidos-de-venta"
+    },
+    "pedidos-de-venta": {
+      "en": "sales-orders",
+      "es": "pedidos-de-venta"
+    },
+    "sales-receipts": {
+      "en": "sales-receipts",
+      "es": "albaranes-de-venta"
+    },
+    "albaranes-de-venta": {
+      "en": "sales-receipts",
+      "es": "albaranes-de-venta"
+    },
+    "services": {
+      "en": "services",
+      "es": "servicios"
+    },
+    "servicios": {
+      "en": "services",
+      "es": "servicios"
+    },
+    "tax": {
+      "en": "tax",
+      "es": "impuestos"
+    },
+    "impuestos": {
+      "en": "tax",
+      "es": "impuestos"
+    },
+    "treasuries": {
+      "en": "treasuries",
+      "es": "tesoreria"
+    },
+    "tesoreria": {
+      "en": "treasuries",
+      "es": "tesoreria"
+    },
+    "warehouses": {
+      "en": "warehouses",
+      "es": "almacenes"
+    },
+    "almacenes": {
+      "en": "warehouses",
+      "es": "almacenes"
+    },
+    "waybills": {
+      "en": "waybills",
+      "es": "albaranes"
+    },
+    "albaranes": {
+      "en": "waybills",
+      "es": "albaranes"
+    }
+  }
+}
