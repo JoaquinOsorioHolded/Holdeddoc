@@ -1,43 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
-
-function HoldedLogo() {
-  return (
-    <svg width="28" height="28" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Bottom-left diamond */}
-      <rect
-        x="8"
-        y="42"
-        width="44"
-        height="62"
-        rx="8"
-        transform="rotate(-45 30 73)"
-        fill="#F25C54"
-      />
-      {/* Top-right diamond */}
-      <rect
-        x="40"
-        y="10"
-        width="44"
-        height="62"
-        rx="8"
-        transform="rotate(-45 62 41)"
-        fill="#F25C54"
-      />
-      {/* White diagonal line on bottom-left diamond */}
-      <line
-        x1="24"
-        y1="52"
-        x2="38"
-        y2="90"
-        stroke="white"
-        strokeWidth="6"
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
 
 export default function Header({
   locale,
@@ -61,7 +25,7 @@ export default function Header({
           </button>
         )}
         <Link href={`/${locale}`} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <HoldedLogo />
+          <Image src="/holded-icon.svg" alt="Holded" width={28} height={24} />
           <span className="font-semibold text-lg">Holded API</span>
           <span className="text-xs px-1.5 py-0.5 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded font-mono">
             v2.0
