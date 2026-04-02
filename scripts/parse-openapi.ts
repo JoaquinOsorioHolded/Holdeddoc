@@ -1,6 +1,8 @@
 import * as fs from "fs";
 import * as path from "path";
 
+// ─── Types ───────────────────────────────────────────────────────────────────
+
 interface OpenAPISpec {
   openapi: string;
   info: { title: string; description: string; version: string };
@@ -12,6 +14,7 @@ interface OpenAPISpec {
 interface OpenAPIOperation {
   tags?: string[];
   summary?: string;
+  description?: string;
   operationId?: string;
   parameters?: OpenAPIParameter[];
   requestBody?: {
@@ -30,21 +33,30 @@ interface OpenAPIParameter {
   description?: string;
 }
 
-// --- Slug utils ---
+// ─── Slug utils ──────────────────────────────────────────────────────────────
+
 function tagToSlug(tag: string): string {
-  return tag.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
+  return tag
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]/g, "");
 }
 
 function summaryToSlug(summary: string): string {
   return summary
     .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9\s-]/g, "")
     .trim()
     .replace(/\s+/g, "-")
     .replace(/-{2,}/g, "-");
 }
 
-// --- Schema parsing ---
+// ─── Schema parsing ─────────────────────────────────────────────────────────
+
 function resolveRef(ref: string, spec: OpenAPISpec): Record<string, unknown> {
   const parts = ref.replace("#/", "").split("/");
   let current: unknown = spec;
@@ -126,7 +138,8 @@ function parseSchemaProperties(
   });
 }
 
-// --- Main parser ---
+// ─── Main parser ────────────────────────────────────────────────────────────
+
 function parseOpenAPI(specPath: string) {
   const raw = fs.readFileSync(specPath, "utf-8");
   const spec: OpenAPISpec = JSON.parse(raw);
@@ -139,6 +152,7 @@ function parseOpenAPI(specPath: string) {
     tagSlug: string;
     operationSlug: string;
     summary: string;
+    description?: string;
     parameters: unknown[];
     requestBody?: unknown;
     responses: unknown[];
@@ -222,6 +236,7 @@ function parseOpenAPI(specPath: string) {
         tagSlug: tSlug,
         operationSlug: opSlug,
         summary: operation.summary || "",
+        description: operation.description || undefined,
         parameters,
         requestBody,
         responses,
@@ -260,15 +275,38 @@ function parseOpenAPI(specPath: string) {
   return result;
 }
 
-// --- Run ---
-const specPath = path.resolve(__dirname, "../openapi.json");
-const outputPath = path.resolve(__dirname, "../src/data/parsed-endpoints.json");
+// ─── Run for all locales ────────────────────────────────────────────────────
 
-console.log("Parsing OpenAPI spec...");
-const data = parseOpenAPI(specPath);
-console.log(`Found ${data.endpoints.length} endpoints in ${data.categories.length} categories`);
+const locales = ["en", "es"] as const;
 
-// Ensure output directory exists
-fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
-console.log(`Written to ${outputPath}`);
+for (const locale of locales) {
+  const specFile = `openapi-${locale}.json`;
+  const specPath = path.resolve(__dirname, "..", specFile);
+
+  if (!fs.existsSync(specPath)) {
+    console.warn(`⚠ Skipping ${locale}: ${specFile} not found`);
+    continue;
+  }
+
+  console.log(`\n📖 Parsing ${specFile}...`);
+  const data = parseOpenAPI(specPath);
+  console.log(`   Found ${data.endpoints.length} endpoints in ${data.categories.length} categories`);
+
+  const withDesc = data.endpoints.filter((e) => e.description).length;
+  console.log(`   ${withDesc} endpoints with descriptions`);
+
+  const outputPath = path.resolve(__dirname, "..", "src", "data", `parsed-endpoints-${locale}.json`);
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+  fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
+  console.log(`   ✅ Written to src/data/parsed-endpoints-${locale}.json`);
+}
+
+// Also generate the default (en) as the legacy file for backward compat
+const enPath = path.resolve(__dirname, "..", "src", "data", "parsed-endpoints-en.json");
+const legacyPath = path.resolve(__dirname, "..", "src", "data", "parsed-endpoints.json");
+if (fs.existsSync(enPath)) {
+  fs.copyFileSync(enPath, legacyPath);
+  console.log("\n📋 Copied EN → parsed-endpoints.json (legacy fallback)");
+}
+
+console.log("\n🎉 Done!");

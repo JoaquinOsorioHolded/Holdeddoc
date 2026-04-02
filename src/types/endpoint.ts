@@ -45,12 +45,13 @@ export interface ParsedResponse {
 
 export interface ParsedEndpoint {
   operationId: string;
-  method: "GET" | "POST" | "PUT" | "DELETE";
+  method: "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
   path: string;
   tag: string;
   tagSlug: string;
   operationSlug: string;
   summary: string;
+  description?: string;
   parameters: ParsedParameter[];
   requestBody?: ParsedRequestBody;
   responses: ParsedResponse[];

@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "parse": "npx tsx scripts/parse-openapi.ts"
+    "parse": "npx tsx scripts/parse-openapi.ts",
+    "update-docs": "bash scripts/update-docs.sh",
+    "update-docs:commit": "bash scripts/update-docs.sh --commit"
   },
   "dependencies": {
     "fuse.js": "^7.1.0",

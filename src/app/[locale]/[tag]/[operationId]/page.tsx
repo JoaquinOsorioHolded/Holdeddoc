@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import parsedData from "@/data/parsed-endpoints.json";
+import { getApiData } from "@/lib/get-api-data";
 import { locales } from "@/i18n/config";
-import type { ParsedData, ParsedEndpoint } from "@/types/endpoint";
+import type { ParsedEndpoint } from "@/types/endpoint";
 import EndpointHeader from "@/components/endpoint/EndpointHeader";
 import ParametersTable from "@/components/endpoint/ParametersTable";
 import RequestBodySchema from "@/components/endpoint/RequestBodySchema";
@@ -13,11 +13,11 @@ import { generateCurl } from "@/lib/code-generators/curl";
 import { generateJavaScript } from "@/lib/code-generators/javascript";
 import { generatePython } from "@/lib/code-generators/python";
 
-const data = parsedData as unknown as ParsedData;
+const enData = getApiData("en");
 
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
-    data.endpoints.map((ep) => ({
+    enData.endpoints.map((ep) => ({
       locale,
       tag: ep.tagSlug,
       operationId: ep.operationSlug,
@@ -31,6 +31,7 @@ export default async function EndpointPage({
   params: Promise<{ locale: string; tag: string; operationId: string }>;
 }) {
   const { locale, tag, operationId } = await params;
+  const data = getApiData(locale);
 
   const endpoint = data.endpoints.find(
     (ep) => ep.tagSlug === tag && ep.operationSlug === operationId

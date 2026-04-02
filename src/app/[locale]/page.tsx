@@ -1,14 +1,12 @@
 import Link from "next/link";
-import parsedData from "@/data/parsed-endpoints.json";
+import { getApiData } from "@/lib/get-api-data";
 import { getDictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
-import type { ParsedData } from "@/types/endpoint";
 import MethodBadge from "@/components/ui/MethodBadge";
-
-const data = parsedData as unknown as ParsedData;
 
 export default async function LandingPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  const data = getApiData(locale);
   const dict = await getDictionary(locale as Locale);
 
   return (

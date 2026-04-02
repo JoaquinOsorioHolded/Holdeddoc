@@ -1,10 +1,7 @@
 import Shell from "@/components/layout/Shell";
-import parsedData from "@/data/parsed-endpoints.json";
+import { getApiData } from "@/lib/get-api-data";
 import { locales, isValidLocale } from "@/i18n/config";
 import { notFound } from "next/navigation";
-import type { ParsedData } from "@/types/endpoint";
-
-const data = parsedData as unknown as ParsedData;
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -19,6 +16,8 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   if (!isValidLocale(locale)) notFound();
+
+  const data = getApiData(locale);
 
   return (
     <Shell categories={data.categories} locale={locale}>
