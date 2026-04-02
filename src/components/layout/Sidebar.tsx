@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Fuse from "fuse.js";
 import MethodBadge from "@/components/ui/MethodBadge";
 import type { ParsedCategory } from "@/types/endpoint";
@@ -16,11 +16,12 @@ interface SidebarProps {
 
 export default function Sidebar({ categories, locale, isOpen, onClose }: SidebarProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const [search, setSearch] = useState("");
   const [expandedTags, setExpandedTags] = useState<Set<string>>(() => {
-    // Expand the active category
+    // Expand the active category (either on tag page or endpoint page)
     const activeTag = categories.find((c) =>
-      c.endpoints.some((ep) => pathname.includes(`/${c.slug}/`))
+      pathname === `/${locale}/${c.slug}` || c.endpoints.some((ep) => pathname.includes(`/${c.slug}/`))
     );
     return new Set(activeTag ? [activeTag.slug] : []);
   });
@@ -54,12 +55,16 @@ export default function Sidebar({ categories, locale, isOpen, onClose }: Sidebar
   }, [search, categories, fuse]);
 
   const toggleTag = (slug: string) => {
+    const wasExpanded = expandedTags.has(slug);
     setExpandedTags((prev) => {
       const next = new Set(prev);
       if (next.has(slug)) next.delete(slug);
       else next.add(slug);
       return next;
     });
+    if (!wasExpanded) {
+      router.push(`/${locale}/${slug}`);
+    }
   };
 
   const isExpanded = (slug: string) => expandedTags.has(slug) || search.trim() !== "";
@@ -125,7 +130,11 @@ export default function Sidebar({ categories, locale, isOpen, onClose }: Sidebar
             <div key={category.slug} className="mb-1">
               <button
                 onClick={() => toggleTag(category.slug)}
-                className="w-full flex items-center justify-between px-3 py-2 text-sm rounded-lg hover:bg-(--color-sidebar-hover) transition-colors text-(--color-sidebar-text)"
+                className={`w-full flex items-center justify-between px-3 py-2 text-sm rounded-lg transition-colors ${
+                  pathname === `/${locale}/${category.slug}`
+                    ? "bg-(--color-sidebar-active) text-blue-600 dark:text-blue-400 font-medium"
+                    : "text-(--color-sidebar-text) hover:bg-(--color-sidebar-hover)"
+                }`}
               >
                 <span className="font-medium">{category.name}</span>
                 <div className="flex items-center gap-2">
