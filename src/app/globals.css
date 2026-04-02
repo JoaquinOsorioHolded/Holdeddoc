@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-sidebar-bg: #f8fafc;
+  --color-sidebar-hover: #f1f5f9;
+  --color-sidebar-active: #eff6ff;
+  --color-sidebar-text: #334155;
+  --color-sidebar-border: #e2e8f0;
+  --color-content-bg: #ffffff;
+  --color-content-text: #1e293b;
+  --color-code-bg: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-method-get: #22c55e;
+  --color-method-post: #3b82f6;
+  --color-method-put: #f59e0b;
+  --color-method-delete: #ef4444;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-sidebar-bg: #0f172a;
+  --color-sidebar-hover: #1e293b;
+  --color-sidebar-active: #1e3a5f;
+  --color-sidebar-text: #cbd5e1;
+  --color-sidebar-border: #1e293b;
+  --color-content-bg: #020617;
+  --color-content-text: #e2e8f0;
+  --color-code-bg: #0f172a;
+  --color-muted: #94a3b8;
+  --color-border: #1e293b;
+}
+
+body {
+  background: var(--color-content-bg);
+  color: var(--color-content-text);
+  font-family: var(--font-sans);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+/* Code blocks always dark */
+pre[class*="language-"],
+code[class*="language-"] {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+pre[class*="language-"] {
+  background: #0f172a !important;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.token.comment { color: #6b7280; }
+.token.string { color: #a5d6ff; }
+.token.number { color: #79c0ff; }
+.token.keyword { color: #ff7b72; }
+.token.function { color: #d2a8ff; }
+.token.operator { color: #ff7b72; }
+.token.punctuation { color: #8b949e; }
+.token.property { color: #7ee787; }
+.token.url { color: #a5d6ff; }
+.token.attr-name { color: #7ee787; }
+.token.attr-value { color: #a5d6ff; }

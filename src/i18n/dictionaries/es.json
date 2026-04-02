@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "search_placeholder": "Buscar endpoints...",
+    "authentication": "Autenticacion",
+    "api_reference": "Referencia API",
+    "categories": "Categorias"
+  },
+  "endpoint": {
+    "parameters": "Parametros",
+    "path_parameters": "Parametros de ruta",
+    "query_parameters": "Parametros de consulta",
+    "request_body": "Cuerpo de la peticion",
+    "responses": "Respuestas",
+    "success_response": "Respuesta exitosa",
+    "error_responses": "Respuestas de error",
+    "try_it": "Probar",
+    "code_examples": "Ejemplos de codigo",
+    "required": "obligatorio",
+    "optional": "opcional",
+    "nullable": "nullable",
+    "default": "Por defecto",
+    "scopes": "Permisos requeridos",
+    "no_parameters": "No se requieren parametros.",
+    "content_type": "Tipo de contenido"
+  },
+  "playground": {
+    "api_key": "Clave API",
+    "api_key_placeholder": "Introduce tu token Bearer...",
+    "send": "Enviar peticion",
+    "sending": "Enviando...",
+    "response": "Respuesta",
+    "status": "Estado",
+    "time": "Tiempo",
+    "no_response": "Pulsa Enviar para probar este endpoint",
+    "warning": "Esto envia peticiones reales a la API de Holded. Usa una clave de prueba."
+  },
+  "auth": {
+    "title": "Autenticacion",
+    "description": "Todas las peticiones requieren autenticacion mediante un token Bearer.",
+    "how_to": "Incluye tu clave API en la cabecera Authorization:",
+    "rate_limit": "Limites de uso",
+    "rate_limit_desc": "La API esta limitada a 100 peticiones por minuto por clave API.",
+    "errors": "Gestion de errores",
+    "errors_desc": "La API usa codigos de estado HTTP estandar y el formato RFC 7807 Problem Details para errores."
+  },
+  "common": {
+    "dark_mode": "Modo oscuro",
+    "light_mode": "Modo claro",
+    "copy": "Copiar",
+    "copied": "Copiado!",
+    "name": "Nombre",
+    "type": "Tipo",
+    "description": "Descripcion",
+    "example": "Ejemplo",
+    "endpoints": "endpoints",
+    "back_to": "Volver a"
+  },
+  "landing": {
+    "welcome": "Bienvenido a la API de Holded",
+    "subtitle": "Integra tus herramientas de negocio con la plataforma ERP de Holded. Gestiona facturas, contactos, productos y mas.",
+    "get_started": "Empezar",
+    "explore_api": "Explorar API"
+  }
+}

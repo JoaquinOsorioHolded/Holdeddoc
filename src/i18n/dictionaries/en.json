@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "search_placeholder": "Search endpoints...",
+    "authentication": "Authentication",
+    "api_reference": "API Reference",
+    "categories": "Categories"
+  },
+  "endpoint": {
+    "parameters": "Parameters",
+    "path_parameters": "Path Parameters",
+    "query_parameters": "Query Parameters",
+    "request_body": "Request Body",
+    "responses": "Responses",
+    "success_response": "Success Response",
+    "error_responses": "Error Responses",
+    "try_it": "Try It",
+    "code_examples": "Code Examples",
+    "required": "required",
+    "optional": "optional",
+    "nullable": "nullable",
+    "default": "Default",
+    "scopes": "Required Scopes",
+    "no_parameters": "No parameters required.",
+    "content_type": "Content Type"
+  },
+  "playground": {
+    "api_key": "API Key",
+    "api_key_placeholder": "Enter your Bearer token...",
+    "send": "Send Request",
+    "sending": "Sending...",
+    "response": "Response",
+    "status": "Status",
+    "time": "Time",
+    "no_response": "Click Send to test this endpoint",
+    "warning": "This sends real requests to the Holded API. Use a test API key."
+  },
+  "auth": {
+    "title": "Authentication",
+    "description": "All API requests require authentication using a Bearer token.",
+    "how_to": "Include your API key in the Authorization header:",
+    "rate_limit": "Rate Limiting",
+    "rate_limit_desc": "The API is limited to 100 requests per minute per API key.",
+    "errors": "Error Handling",
+    "errors_desc": "The API uses standard HTTP status codes and RFC 7807 Problem Details format for errors."
+  },
+  "common": {
+    "dark_mode": "Dark Mode",
+    "light_mode": "Light Mode",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "name": "Name",
+    "type": "Type",
+    "description": "Description",
+    "example": "Example",
+    "endpoints": "endpoints",
+    "back_to": "Back to"
+  },
+  "landing": {
+    "welcome": "Welcome to the Holded API",
+    "subtitle": "Integrate your business tools with the Holded ERP platform. Manage invoices, contacts, products, and more.",
+    "get_started": "Get Started",
+    "explore_api": "Explore API"
+  }
+}
