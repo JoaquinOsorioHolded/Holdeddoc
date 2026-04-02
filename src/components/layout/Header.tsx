@@ -1,7 +1,51 @@
+import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 
-export default function Header({ onToggleSidebar }: { onToggleSidebar?: () => void }) {
+function HoldedLogo() {
+  return (
+    <svg width="28" height="28" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* Bottom-left diamond */}
+      <rect
+        x="8"
+        y="42"
+        width="44"
+        height="62"
+        rx="8"
+        transform="rotate(-45 30 73)"
+        fill="#F25C54"
+      />
+      {/* Top-right diamond */}
+      <rect
+        x="40"
+        y="10"
+        width="44"
+        height="62"
+        rx="8"
+        transform="rotate(-45 62 41)"
+        fill="#F25C54"
+      />
+      {/* White diagonal line on bottom-left diamond */}
+      <line
+        x1="24"
+        y1="52"
+        x2="38"
+        y2="90"
+        stroke="white"
+        strokeWidth="6"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+export default function Header({
+  locale,
+  onToggleSidebar,
+}: {
+  locale: string;
+  onToggleSidebar?: () => void;
+}) {
   return (
     <header className="sticky top-0 z-40 h-14 flex items-center justify-between px-4 border-b border-(--color-border) bg-(--color-content-bg)/80 backdrop-blur-md">
       <div className="flex items-center gap-3">
@@ -16,13 +60,13 @@ export default function Header({ onToggleSidebar }: { onToggleSidebar?: () => vo
             </svg>
           </button>
         )}
-        <div className="flex items-center gap-2">
-          <div className="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">H</span>
-          </div>
+        <Link href={`/${locale}`} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <HoldedLogo />
           <span className="font-semibold text-lg">Holded API</span>
-          <span className="text-xs px-1.5 py-0.5 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded font-mono">v1.0</span>
-        </div>
+          <span className="text-xs px-1.5 py-0.5 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded font-mono">
+            v2.0
+          </span>
+        </Link>
       </div>
       <div className="flex items-center gap-2">
         <LanguageSwitcher />

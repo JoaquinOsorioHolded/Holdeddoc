@@ -18,7 +18,7 @@ export default function Shell({
 
   return (
     <div className="min-h-screen">
-      <Header onToggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
+      <Header locale={locale} onToggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
       <div className="flex">
         <Sidebar
           categories={categories}
